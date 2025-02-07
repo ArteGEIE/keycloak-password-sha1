@@ -5,7 +5,7 @@
 	<groupId>com.msalmi</groupId>
 	<artifactId>keycloak-sha1</artifactId>
 
-	<version>0.0.1</version>
+	<version>1.0.0</version>
 	<name>keycloak-sha1</name>
 	<description>Adds SHA1 hashing support to Keycloak</description>
 
@@ -54,7 +54,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>keycloak-sha1</finalName>
+		<finalName>arte-keycloak-sha1-${version}</finalName>
 		<plugins>
 			<!-- Download source code in Eclipse, best practice -->
 			<plugin>
