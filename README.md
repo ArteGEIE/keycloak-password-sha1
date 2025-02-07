@@ -1,4 +1,10 @@
 # keycloak-sha1-salted
+
+This project is a fork of https://github.com/nicolabeghin/keycloak-sha1-salted for Arte. 
+In this project, sha1 is constructed from `sha1(rawPassword + salt)` (and not `sha1(salt + rawPassword)` as made originally).
+
+---
+
 Add salted SHA1 hashing support to Keycloak. ie. you're migrating to Keycloak and need to import legacy passwords stored as SHA-1 salted hashes.
 
 ## Requirements
@@ -8,7 +14,7 @@ Add salted SHA1 hashing support to Keycloak. ie. you're migrating to Keycloak an
 ## Building
 
 - Run `mvn package`
-- JAR archive is generated in `./target/keycloak-sha1.jar`
+- JAR archive is generated in `./target/arte-keycloak-sha1-1.0.0.jar`
 
 ## Deploying to Keycloak
 
