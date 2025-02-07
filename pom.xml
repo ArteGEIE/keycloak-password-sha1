@@ -54,7 +54,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>keycloak-sha1</finalName>
+		<finalName>arte-keycloak-sha1-${version}</finalName>
 		<plugins>
 			<!-- Download source code in Eclipse, best practice -->
 			<plugin>

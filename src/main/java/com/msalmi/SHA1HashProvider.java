@@ -34,7 +34,7 @@ public class SHA1HashProvider implements PasswordHashProvider {
 	@Override
 	public boolean verify(String rawPassword, PasswordCredentialModel credential) {
 		String salt = new String(credential.getPasswordSecretData().getSalt(), java.nio.charset.StandardCharsets.UTF_8);
-		String encodedPassword = this.encode(salt + rawPassword, credential.getPasswordCredentialData().getHashIterations());
+		String encodedPassword = this.encode(rawPassword + salt, credential.getPasswordCredentialData().getHashIterations());
 		String hash = credential.getPasswordSecretData().getValue();
 		return encodedPassword.equals(hash);
 	}
