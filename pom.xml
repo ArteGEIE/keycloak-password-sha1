@@ -5,11 +5,19 @@
 	<groupId>com.msalmi</groupId>
 	<artifactId>keycloak-sha1</artifactId>
 
-	<version>1.0.0</version>
+	<version>${revision}</version>
 	<name>keycloak-sha1</name>
 	<description>Adds SHA1 hashing support to Keycloak</description>
 
 	<packaging>jar</packaging>
+
+	<distributionManagement>
+	   <repository>
+	     <id>github</id>
+	     <name>ArteGEIE GitHub Apache Maven Packages</name>
+	     <url>https://maven.pkg.github.com/artegeie/keycloak-password-sha1</url>
+	   </repository>
+	</distributionManagement>
 
 	<properties>
 		<java.release>11</java.release>
