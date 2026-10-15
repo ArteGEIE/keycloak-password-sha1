@@ -20,8 +20,9 @@
 	</distributionManagement>
 
 	<properties>
-		<java.release>11</java.release>
-		<keycloak.version>10.0.0</keycloak.version>
+		<!-- Also read by the publish workflow to pick the JDK -->
+		<maven.compiler.source>21</maven.compiler.source>
+		<keycloak.version>26.8.0</keycloak.version>
 		<junit.version>5.7.0</junit.version>
 	</properties>
 
@@ -81,7 +82,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 				<configuration>
-					<release>${java.release}</release>
+					<release>${maven.compiler.source}</release>
 				</configuration>
 			</plugin>
 

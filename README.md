@@ -8,7 +8,7 @@ In this project, sha1 is constructed from `sha1(rawPassword + salt)` (and not `s
 Add salted SHA1 hashing support to Keycloak. ie. you're migrating to Keycloak and need to import legacy passwords stored as SHA-1 salted hashes.
 
 ## Requirements
-- Java 11
+- Java 21
 - Maven 3.6
 
 ## Building
